@@ -44,6 +44,10 @@ INSTALLED_APPS = [
 
     # Providers
     'allauth.socialaccount.providers.google',
+
+    # Creare Apps
+    'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
 ]
 
 # site_id
@@ -64,7 +68,7 @@ ROOT_URLCONF = 'conf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
