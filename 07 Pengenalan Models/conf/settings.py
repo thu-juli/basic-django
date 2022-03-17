@@ -89,6 +89,15 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
+ACCOUNT_USER_MODEL_USERNAME = None
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+# APPLY CUSTOM USER
+AUTH_USER_MODEL = 'users.Users'
+
+
 WSGI_APPLICATION = 'conf.wsgi.application'
 
 # Database

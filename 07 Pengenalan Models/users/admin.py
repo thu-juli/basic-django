@@ -7,7 +7,7 @@ class UserAdmin(BaseUserAdmin):
     fieldsets = (
         (None, {'fields': ('email', 'password', 'name', 'last_login')}),
         ('Permissions', {'fields': (
-            'is_activate',
+            'is_active',
             'is_staff',
             'is_superuser',
             'groups',
@@ -25,7 +25,7 @@ class UserAdmin(BaseUserAdmin):
     )
 
     list_display = ('email', 'name', 'is_staff', 'last_login',)
-    list_filter = ('is_staff', 'is_superuser', 'is_activate', 'groups',)
+    list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups',)
     search_fields = ('email',)
     ordering = ('email',)
     filter_horizontal = ('groups', 'user_permissions',)
