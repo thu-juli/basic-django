@@ -15,5 +15,9 @@
 1. Select create and activate venv
 2. Install Django `pip install django`
 
+## Install pep & pylint
+1. Activate venv
+2. Install pep & pylint `pip install autopep8 pylint pylint-django`
+
 ## Documentation Django
 > https://docs.djangoproject.com
